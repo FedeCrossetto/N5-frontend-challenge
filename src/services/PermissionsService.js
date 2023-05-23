@@ -14,10 +14,10 @@ export const getPermissionById = (id) => {
 
 // Crear un permiso
 export const createPermission = (permissionData) => {
-  return axios.post(`${API_BASE_URL}/permisos`, permissionData);
+  return axios.post(`${API_BASE_URL}/permission`, permissionData);
 };
 
 // Actualizar un permiso por ID
 export const updatePermission = (id, permissionData) => {
-  return axios.put(`${API_BASE_URL}/permisos/${id}`, permissionData);
+  return axios.put(`${API_BASE_URL}/permission/${id}`, permissionData);
 };

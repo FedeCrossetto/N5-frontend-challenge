@@ -12,7 +12,7 @@ const columns = [
 const PermissionTypesTable = () => {
 
   return (
-    <Table columns={columns} fetchFn={API.getPermissionTypes} />
+    <Table columns={columns} getPermission={API.getPermissionTypes} updatePermission={API.updatePermissionType} />
   )
 }
 export default PermissionTypesTable;

@@ -2,22 +2,12 @@ import axios from 'axios';
 
 const API_BASE_URL = 'https://localhost:7295/api';
 
-// Obtener todos los permisos
+// Obtener todos los tipos de permiso
 export const getPermissionTypes = () => {
   return axios.get(`${API_BASE_URL}/permissionType`);
 };
 
-// // Obtener un permiso por ID
-// export const getPermissionById = (id) => {
-//   return axios.get(`${API_BASE_URL}/permission/${id}`);
-// };
-
-// // Crear un permiso
-// export const createPermission = (permissionData) => {
-//   return axios.post(`${API_BASE_URL}/permisos`, permissionData);
-// };
-
-// // Actualizar un permiso por ID
-// export const updatePermission = (id, permissionData) => {
-//   return axios.put(`${API_BASE_URL}/permisos/${id}`, permissionData);
-// };
+// Actualizar un tipo de permiso por ID
+export const updatePermissionType = (id, permissionData) => {
+  return axios.put(`${API_BASE_URL}/permissionType/${id}`, permissionData);
+};
