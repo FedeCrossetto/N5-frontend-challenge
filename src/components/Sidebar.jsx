@@ -23,28 +23,6 @@ const Sidebar = () => {
         N5
       </Box>
       <VStack spacing={4} align="center" marginTop={8}>
-        <Tooltip label="Permissions">
-          <Link
-            as={ReactLink}
-            to="/permissions-table"
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            fontSize="sm"
-            color="whiteAlpha.800"
-            _hover={{
-              textDecoration: 'none',
-              bg: 'gray.700',
-              rounded: 'md',
-              color: 'purple.300'
-            }}
-            padding={2}
-          >
-            <Box marginBottom={1}>
-              <BiShield size={20} />
-            </Box>
-          </Link>
-        </Tooltip>
         <Tooltip label="Permission Types">
           <Link
             as={ReactLink}
@@ -64,6 +42,28 @@ const Sidebar = () => {
           >
             <Box marginTop={1}>
               <BiShieldQuarter size={20} />
+            </Box>
+          </Link>
+        </Tooltip>
+        <Tooltip label="Permissions">
+          <Link
+            as={ReactLink}
+            to="/permissions-table"
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            fontSize="sm"
+            color="whiteAlpha.800"
+            _hover={{
+              textDecoration: 'none',
+              bg: 'gray.700',
+              rounded: 'md',
+              color: 'purple.300'
+            }}
+            padding={2}
+          >
+            <Box marginBottom={1}>
+              <BiShield size={20} />
             </Box>
           </Link>
         </Tooltip>

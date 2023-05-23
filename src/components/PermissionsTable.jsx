@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import * as API from '../services/PermissionsService';
 import Table from '../components/Table';
+import * as API from '../services/PermissionsService';
 import * as APITYPES from '../services/PermissionTypesService';
 
 
@@ -13,10 +13,14 @@ const columns = [
 ];
 
 const PermissionsTable = () => {
-  const [permissions, setPermissions] = useState([]);
-
   return (
-    <Table columns={columns} getPermission={API.getPermissions} updatePermission={API.updatePermission} permissionTypes={APITYPES.getPermissionTypes} />
+    <Table
+      columns={columns}
+      getPermission={API.getPermissions}
+      updatePermission={API.updatePermission}
+      createPermission={API.createPermission}
+      permissionTypes={APITYPES.getPermissionTypes}
+    />
   )
 }
 export default PermissionsTable;

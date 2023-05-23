@@ -6,17 +6,16 @@ import PermissionTypesTable from './components/PermissionTypesTable';
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <ChakraProvider>
-    <Router>
-      <Sidebar />
-      <Routes>
-        <Route path="/permissions-table" element={<PermissionsTable />} />
-        <Route path="/permission-types-table" element={<PermissionTypesTable />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Sidebar />
+        <Routes>
+          <Route path="/permissions-table" element={<PermissionsTable />} />
+          <Route path="/permission-types-table" element={<PermissionTypesTable />} />
+        </Routes>
+      </Router>
     </ChakraProvider>
   );
 }
